@@ -9,7 +9,12 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ *      @author fanchenyang
+ *      @date 2020/11/18 11:53
+ *      
+ *      自定义流式布局
+ */
 public class FlowView extends ViewGroup {
     // 存储每一行的元素
     private List<List<View>> views = new ArrayList<>();
