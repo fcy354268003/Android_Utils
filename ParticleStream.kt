@@ -149,5 +149,14 @@ class ParticleStream(context: Context?, attrs: AttributeSet?) : View(context, at
         Log.d(TAG, "onDraw: $time")
     }
 }
-
+class Particle(
+        var x: Float,
+        var y: Float,
+        var radius: Float,//粒子半径
+        var speed: Int,
+        var alpha: Int,
+        var maxOffset: Float,
+        var offset: Int = 0,//当前移动距离
+        var angle: Double = 0.0// 粒子角度
+)
 private const val TAG = "MainActivity"
